@@ -1,12 +1,18 @@
 import time
 
+import logging
+from io import BytesIO
+
 import cv2
 import imutils
 import os
+import requests
 from PIL import Image
 from datetime import datetime
 from imutils.video import FPS
 from imutils.video import VideoStream
+
+logging.basicConfig()
 
 output_folder = os.path.join(os.path.dirname(__file__), '..')
 
@@ -29,7 +35,23 @@ while True:
     print(frame.shape)
 
     pil_im = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
-    pil_im.save(os.path.join(output_folder, 'images/{}.jpg'.format(datetime.now().strftime("%Y%m%d_%H%M%S.%f"))))
+    filename = '{}.jpg'.format(datetime.now().strftime("%Y%m%d_%H%M%S.%f"))
+    pil_im.save(os.path.join(output_folder, 'images/{}'.format(filename)))
+
+    byte_io = BytesIO()
+    pil_im.save(byte_io, 'jpeg')
+    byte_io.seek(0)
+
+    try:
+        r = requests.post(
+            'http://localhost:8000/food-watch/picture-events',
+            files={
+                'picture': ('picture.jpg', byte_io),
+            },
+        )
+        r.raise_for_status()
+    except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError) as ex:
+        logging.exception(ex)
 
     # resize the frame to have a width of 600 pixels (while
     # maintaining the aspect ratio), and then grab the image
@@ -39,7 +61,7 @@ while True:
 
     cv2.imshow("Frame", frame)
 
-    key = cv2.waitKey(150) & 0xFF
+    key = cv2.waitKey(5_000) & 0xFF
     if key == ord("q"):
         break
 

@@ -10,4 +10,4 @@ class PictureEvent(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
-    picture = models.ImageField(upload_to=picture_path)
+    picture = models.ImageField(upload_to=picture_path, blank=False, null=False)
