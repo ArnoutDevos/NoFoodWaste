@@ -7,6 +7,8 @@ IBM api:
 Logitech keyboard:
 `pip install pyusb`
 
+(OSX) Libusb needed!
+
 - Every 1 minute: take 4K picture on *client*
 - Count people, blur people on client and send patched versions from *client* to *server* (= increased security/anonymity)
 - Server does API call to IBM Watson Vision to classify as food/non-food, and stores database: (timestamp, building, {11: "food", 12: "non-food", ...} (keys are array indexes ij of patches)
