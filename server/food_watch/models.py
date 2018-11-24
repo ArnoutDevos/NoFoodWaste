@@ -1,4 +1,5 @@
 from django.db import models
+from jsonfield import JSONField
 from uuid import uuid4
 
 
@@ -11,3 +12,4 @@ class PictureEvent(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     picture = models.ImageField(upload_to=picture_path, blank=False, null=False)
+    metadata = JSONField(default=dict)

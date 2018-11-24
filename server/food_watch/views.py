@@ -29,7 +29,15 @@ def rank_classes(classes):
     ], reverse=True)
 
 
+def batch(iterable, n=1):
+    l = len(iterable)
+    for ndx in range(0, l, n):
+        yield iterable[ndx:min(ndx + n, l)]
+
+
 def watson_classification(request):
+
+    # for patches in batch(all_patches, 20):
     with tempfile.NamedTemporaryFile() as f:
         with BytesIO() as zip_file:
             with zipfile.ZipFile(zip_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
@@ -162,7 +170,7 @@ class PictureEventViewSet(viewsets.ModelViewSet):
 
         classes = rank_classes(classes)
 
-        print(classes)
+        serializer.validated_data['metadata'] = dict(detections=classes)
 
         self.perform_create(serializer)
         headers = self.get_success_headers(serializer.data)
