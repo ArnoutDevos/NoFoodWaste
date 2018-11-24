@@ -1,1 +1,654 @@
-{"images": [{"classifiers": [{"classifier_id": "food", "name": "food", "classes": [{"class": "apple", "score": 0.572, "type_hierarchy": "/fruit/accessory fruit/apple"}, {"class": "accessory fruit", "score": 0.572}, {"class": "fruit", "score": 0.805}, {"class": "banana", "score": 0.5, "type_hierarchy": "/fruit/banana"}]}], "image": "image.jpg"}], "images_processed": 1, "custom_classes": 0}
+{
+    "custom_classes": 0,
+    "images": [
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "terrine",
+                            "score": 0.568,
+                            "type_hierarchy": "/food/nutrition/dish/terrine"
+                        },
+                        {
+                            "class": "dish",
+                            "score": 0.568
+                        },
+                        {
+                            "class": "nutrition",
+                            "score": 0.625
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.625
+                        },
+                        {
+                            "class": "coffin",
+                            "score": 0.564,
+                            "type_hierarchy": "/box/coffin"
+                        },
+                        {
+                            "class": "box",
+                            "score": 0.565
+                        },
+                        {
+                            "class": "futon",
+                            "score": 0.564
+                        },
+                        {
+                            "class": "dugout canoe",
+                            "score": 0.508,
+                            "type_hierarchy": "/vehicle/craft/watercraft/boat/small boat/dugout canoe"
+                        },
+                        {
+                            "class": "small boat",
+                            "score": 0.509
+                        },
+                        {
+                            "class": "boat",
+                            "score": 0.509
+                        },
+                        {
+                            "class": "watercraft",
+                            "score": 0.509
+                        },
+                        {
+                            "class": "craft",
+                            "score": 0.51
+                        },
+                        {
+                            "class": "vehicle",
+                            "score": 0.51
+                        },
+                        {
+                            "class": "roly-poly",
+                            "score": 0.5,
+                            "type_hierarchy": "/food/nutrition/dessert/pudding/roly-poly"
+                        },
+                        {
+                            "class": "pudding",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "dessert",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "food product",
+                            "score": 0.599
+                        },
+                        {
+                            "class": "beige color",
+                            "score": 0.988
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/marbletable.jpeg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "tray",
+                            "score": 0.683,
+                            "type_hierarchy": "/utensil/tray"
+                        },
+                        {
+                            "class": "utensil",
+                            "score": 0.683
+                        },
+                        {
+                            "class": "ocardina",
+                            "score": 0.595,
+                            "type_hierarchy": "/musical instrument/ocardina"
+                        },
+                        {
+                            "class": "musical instrument",
+                            "score": 0.685
+                        },
+                        {
+                            "class": "pizzeria",
+                            "score": 0.514,
+                            "type_hierarchy": "/building/retail store/shop/pizzeria"
+                        },
+                        {
+                            "class": "shop",
+                            "score": 0.514
+                        },
+                        {
+                            "class": "retail store",
+                            "score": 0.514
+                        },
+                        {
+                            "class": "building",
+                            "score": 0.514
+                        },
+                        {
+                            "class": "tambourine (drum like music instrument)",
+                            "score": 0.5,
+                            "type_hierarchy": "/musical instrument/percussion instrument/drum/tambourine (drum like music instrument)"
+                        },
+                        {
+                            "class": "drum",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "percussion instrument",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.6
+                        },
+                        {
+                            "class": "tableware",
+                            "score": 0.594
+                        },
+                        {
+                            "class": "Indian red color",
+                            "score": 0.927
+                        },
+                        {
+                            "class": "reddish orange color",
+                            "score": 0.651
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/pizza.jpeg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "armguard",
+                            "score": 0.808,
+                            "type_hierarchy": "/protective covering/armguard"
+                        },
+                        {
+                            "class": "protective covering",
+                            "score": 0.808
+                        },
+                        {
+                            "class": "magazine rack",
+                            "score": 0.534,
+                            "type_hierarchy": "/support/rack/magazine rack"
+                        },
+                        {
+                            "class": "rack",
+                            "score": 0.534
+                        },
+                        {
+                            "class": "support",
+                            "score": 0.535
+                        },
+                        {
+                            "class": "slip ring",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "bag",
+                            "score": 0.792
+                        },
+                        {
+                            "class": "light brown color",
+                            "score": 0.651
+                        },
+                        {
+                            "class": "claret red color",
+                            "score": 0.644
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/topview.jpg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "bocce ball",
+                            "score": 0.677,
+                            "type_hierarchy": "/ball/bocce ball"
+                        },
+                        {
+                            "class": "ball",
+                            "score": 0.678
+                        },
+                        {
+                            "class": "olive",
+                            "score": 0.584,
+                            "type_hierarchy": "/fruit/olive"
+                        },
+                        {
+                            "class": "fruit",
+                            "score": 0.857
+                        },
+                        {
+                            "class": "McIntosh",
+                            "score": 0.582,
+                            "type_hierarchy": "/fruit/pome/apple/eating apple/McIntosh"
+                        },
+                        {
+                            "class": "eating apple",
+                            "score": 0.643
+                        },
+                        {
+                            "class": "apple",
+                            "score": 0.666
+                        },
+                        {
+                            "class": "pome",
+                            "score": 0.68
+                        },
+                        {
+                            "class": "cranberry",
+                            "score": 0.5,
+                            "type_hierarchy": "/fruit/berry/cranberry"
+                        },
+                        {
+                            "class": "berry",
+                            "score": 0.527
+                        },
+                        {
+                            "class": "plant",
+                            "score": 0.798
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.794
+                        },
+                        {
+                            "class": "seed",
+                            "score": 0.794
+                        },
+                        {
+                            "class": "olive color",
+                            "score": 0.941
+                        },
+                        {
+                            "class": "chestnut color",
+                            "score": 0.92
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/appletop.jpg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "avocado",
+                            "score": 0.985,
+                            "type_hierarchy": "/fruit/avocado"
+                        },
+                        {
+                            "class": "fruit",
+                            "score": 0.985
+                        },
+                        {
+                            "class": "avocado tree",
+                            "score": 0.5,
+                            "type_hierarchy": "/plant/tree/avocado tree"
+                        },
+                        {
+                            "class": "tree",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "plant",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "olive color",
+                            "score": 0.826
+                        },
+                        {
+                            "class": "olive green color",
+                            "score": 0.792
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/avocado.jpeg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "cookie sheet",
+                            "score": 0.53,
+                            "type_hierarchy": "/utensil/cookie sheet"
+                        },
+                        {
+                            "class": "utensil",
+                            "score": 0.539
+                        },
+                        {
+                            "class": "plate",
+                            "score": 0.56,
+                            "type_hierarchy": "/food/nutrition/plate"
+                        },
+                        {
+                            "class": "nutrition",
+                            "score": 0.577
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.578
+                        },
+                        {
+                            "class": "galantine",
+                            "score": 0.518,
+                            "type_hierarchy": "/food/nutrition/dish/galantine"
+                        },
+                        {
+                            "class": "dish",
+                            "score": 0.521
+                        },
+                        {
+                            "class": "bone-ash cup",
+                            "score": 0.516
+                        },
+                        {
+                            "class": "palette",
+                            "score": 0.509,
+                            "type_hierarchy": "/protective covering/shield/plate/palette"
+                        },
+                        {
+                            "class": "shield",
+                            "score": 0.51
+                        },
+                        {
+                            "class": "protective covering",
+                            "score": 0.51
+                        },
+                        {
+                            "class": "dinner table",
+                            "score": 0.5,
+                            "type_hierarchy": "/furniture/table/dining table/dinner table"
+                        },
+                        {
+                            "class": "dining table",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "table",
+                            "score": 0.504
+                        },
+                        {
+                            "class": "furniture",
+                            "score": 0.504
+                        },
+                        {
+                            "class": "tableware",
+                            "score": 0.599
+                        },
+                        {
+                            "class": "olive green color",
+                            "score": 0.695
+                        },
+                        {
+                            "class": "pale yellow color",
+                            "score": 0.613
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/topfood.jpeg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "plate",
+                            "score": 0.709,
+                            "type_hierarchy": "/food/nutrition/plate"
+                        },
+                        {
+                            "class": "nutrition",
+                            "score": 0.856
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.857
+                        },
+                        {
+                            "class": "appetizer",
+                            "score": 0.613,
+                            "type_hierarchy": "/food/nutrition/appetizer"
+                        },
+                        {
+                            "class": "brunch",
+                            "score": 0.509,
+                            "type_hierarchy": "/food/nutrition/meal/brunch"
+                        },
+                        {
+                            "class": "meal",
+                            "score": 0.515
+                        },
+                        {
+                            "class": "hors d'oeuvre",
+                            "score": 0.504,
+                            "type_hierarchy": "/food/nutrition/appetizer/hors d'oeuvre"
+                        },
+                        {
+                            "class": "galantine",
+                            "score": 0.5,
+                            "type_hierarchy": "/food/nutrition/dish/galantine"
+                        },
+                        {
+                            "class": "dish",
+                            "score": 0.513
+                        },
+                        {
+                            "class": "pale yellow color",
+                            "score": 0.998
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/Dining-at-Alcomar.jpg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "ackee",
+                            "score": 0.838,
+                            "type_hierarchy": "/fruit/ackee"
+                        },
+                        {
+                            "class": "fruit",
+                            "score": 0.839
+                        },
+                        {
+                            "class": "hors d'oeuvre",
+                            "score": 0.5,
+                            "type_hierarchy": "/food/nutrition/appetizer/hors d'oeuvre"
+                        },
+                        {
+                            "class": "appetizer",
+                            "score": 0.502
+                        },
+                        {
+                            "class": "nutrition",
+                            "score": 0.503
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.503
+                        },
+                        {
+                            "class": "food product",
+                            "score": 0.79
+                        },
+                        {
+                            "class": "vegetable",
+                            "score": 0.792
+                        },
+                        {
+                            "class": "seed",
+                            "score": 0.797
+                        },
+                        {
+                            "class": "tree",
+                            "score": 0.794
+                        },
+                        {
+                            "class": "chestnut color",
+                            "score": 0.99
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/nuts.jpg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "strawberry",
+                            "score": 0.95,
+                            "type_hierarchy": "/mound/embankment/strawberry"
+                        },
+                        {
+                            "class": "embankment",
+                            "score": 0.95
+                        },
+                        {
+                            "class": "mound",
+                            "score": 0.95
+                        },
+                        {
+                            "class": "beach strawberry",
+                            "score": 0.5,
+                            "type_hierarchy": "/plant/herb/beach strawberry"
+                        },
+                        {
+                            "class": "herb",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "plant",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "berry",
+                            "score": 0.8
+                        },
+                        {
+                            "class": "fruit",
+                            "score": 0.788
+                        },
+                        {
+                            "class": "dark red color",
+                            "score": 0.846
+                        },
+                        {
+                            "class": "reddish orange color",
+                            "score": 0.749
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/strawberry.jpeg"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "bone-ash cup",
+                            "score": 0.549
+                        },
+                        {
+                            "class": "deviled egg",
+                            "score": 0.548,
+                            "type_hierarchy": "/food/nutrition/dish/deviled egg"
+                        },
+                        {
+                            "class": "dish",
+                            "score": 0.599
+                        },
+                        {
+                            "class": "nutrition",
+                            "score": 0.554
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.555
+                        },
+                        {
+                            "class": "salad bowl",
+                            "score": 0.512,
+                            "type_hierarchy": "/utensil/tableware/bowl/salad bowl"
+                        },
+                        {
+                            "class": "bowl",
+                            "score": 0.525
+                        },
+                        {
+                            "class": "tableware",
+                            "score": 0.577
+                        },
+                        {
+                            "class": "utensil",
+                            "score": 0.625
+                        },
+                        {
+                            "class": "tray",
+                            "score": 0.506,
+                            "type_hierarchy": "/utensil/tray"
+                        },
+                        {
+                            "class": "serving dish",
+                            "score": 0.5,
+                            "type_hierarchy": "/utensil/tableware/dish/serving dish"
+                        },
+                        {
+                            "class": "food product",
+                            "score": 0.598
+                        },
+                        {
+                            "class": "pale yellow color",
+                            "score": 0.792
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/download.jpeg"
+        }
+    ],
+    "images_processed": 10
+}
