@@ -2,8 +2,10 @@
 LauzHack 2018
 
 IBM api:
-
 `pip install --upgrade "watson-developer-cloud>=2.4.1"`
+
+Logitech keyboard:
+`pip install pyusb`
 
 - Every 1 minute: take 4K picture on *client*
 - Count people, blur people on client and send patched versions from *client* to *server* (= increased security/anonymity)
