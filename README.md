@@ -1,2 +1,2 @@
 # NoFoodWaste
-LauzHack 2019
+LauzHack 2018
