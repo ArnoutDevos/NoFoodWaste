@@ -28,6 +28,9 @@ while True:
     frame = vs.read()
     print(frame.shape)
 
+    pil_im = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+    pil_im.save(os.path.join(output_folder, 'images/{}.jpg'.format(datetime.now().strftime("%Y%m%d_%H%M%S.%f"))))
+
     # resize the frame to have a width of 600 pixels (while
     # maintaining the aspect ratio), and then grab the image
     # dimensions
@@ -35,10 +38,6 @@ while True:
     (h, w) = frame.shape[:2]
 
     cv2.imshow("Frame", frame)
-
-    frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-    pil_im = Image.fromarray(frame)
-    pil_im.save(os.path.join(output_folder, 'images/{}.jpg'.format(datetime.now().strftime("%Y%m%d_%H%M%S.%f"))))
 
     key = cv2.waitKey(150) & 0xFF
     if key == ord("q"):
