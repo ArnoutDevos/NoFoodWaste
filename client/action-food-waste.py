@@ -26,27 +26,35 @@ INTENT_FILTER_GET_FINAL_ANSWER = [
 API_HOST = 'http://localhost:8000'
 
 SessionsStates = {}
+SessionsStates[session_id]["food"] = []
 
 
 def user_ask_food(hermes, intent_message):
     session_id = intent_message.session_id
 
-    try:
-        r = requests.get('/food-watch/get-food-available')
-        r.raise_for_status()
-        r_data = r.json()
-    except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError) as ex:
-        r_data = {}
-        print(ex)
+    i=0
+    while True:
+        try:
+            r = requests.get('/food-watch/get-food-available')
+            r.raise_for_status()
+        except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError) as ex:
+            print(ex)
+            time.sleep(1000)
 
-    food = r_data.get('food')
-    if food:
-        response = "Hey buddy, I saw some free food in the BC building. Don't let it go to waste!"
-    else:
-        response = "No food"
+        SessionsStates[session_id]["food"] = r.json().get('food')
+
+        if SessionsStates[session_id]["food"]:
+            break
+
+        if i == 1:
+            break
+        i +=1
+        time.sleep(1000)
+
+    SessionsStates[session_id]["food"] = food_list
+    response = "Hey buddy, I saw at least {} free food in the BC building. Don't let it go to waste!".format(str(len(food_list)))
 
     hermes.publish_continue_session(session_id, response, INTENT_FILTER_GET_ANSWER)
-
 
 def user_more_info(hermes, intent_message):
     session_id = intent_message.session_id
@@ -84,7 +92,7 @@ def user_satisfied(hermes, intent_message):
     session_id = intent_message.session_id
 
     # clean up
-    #del SessionsStates[session_id]
+    del SessionsStates[session_id]
     response = "Alright, enjoy your meal!"
 
     hermes.publish_end_session(session_id, response)
