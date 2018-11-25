@@ -45,14 +45,16 @@ def user_more_info(hermes, intent_message):
     list_foods = ["pizza", "beer"]
 
     specific_food = None
+
+    response = ""
     if intent_message.slots is not None:
-        specific_food = intent_message.slots.answer.first().value
+        specific_food = intent_message.slots.food_name.first().value
         if specific_food in list_foods:
             response = "It is your lucky day, they have {}.".format(specific_food)
-            hermes.publish_end_session(session_id, response)
+            #hermes.publish_end_session(session_id, response)
         else:
             response = "Unfortunately, they don't have any free {0} today, but they do have {1}.".format(specific_food, str(list_foods))
-            hermes.publish_end_session(session_id, response)
+            #hermes.publish_end_session(session_id, response)
 
     else:
         response = "On today's menu they serve {}.".format(list_foods)
