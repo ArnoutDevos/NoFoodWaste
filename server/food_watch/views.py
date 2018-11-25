@@ -1,5 +1,7 @@
+import json
 import shutil
 import tempfile
+from django.core.serializers import serialize
 from io import BytesIO
 
 import zipfile
@@ -8,7 +10,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from watson_developer_cloud import VisualRecognitionV3
 
-from food_watch.models import PictureEvent
+from food_watch.models import PictureEvent, PicturePatch
 from food_watch.serializers import PictureEventSerializer
 
 visual_recognition = VisualRecognitionV3(
@@ -23,10 +25,14 @@ def hello_world(request):
 
 
 def rank_classes(classes):
-    return sorted([
-        (detection['score'], detection['class'])
-        for detection in classes
-    ], reverse=True)
+    return sorted(
+        map(lambda x: {
+            'class': x['class'],
+            'score': x['score'],
+        }, classes),
+        key=lambda x: x['score'],
+        reverse=True,
+    )
 
 
 def batch(iterable, n=1):
@@ -35,26 +41,32 @@ def batch(iterable, n=1):
         yield iterable[ndx:min(ndx + n, l)]
 
 
-def watson_classification(request):
+def watson_classification(patches, request):
+    all_classes = {}
 
-    # for patches in batch(all_patches, 20):
-    with tempfile.NamedTemporaryFile() as f:
-        with BytesIO() as zip_file:
-            with zipfile.ZipFile(zip_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
-                zipf.writestr('0.jpg', request.data['picture'].read())
+    for patches in batch(list(patches.keys()), 20):
+        with tempfile.NamedTemporaryFile() as f:
+            with BytesIO() as zip_file:
+                with zipfile.ZipFile(zip_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
+                    for (x, y) in patches:
+                        zipf.writestr('{}_{}'.format(x, y), request.data['patch_{}_{}'.format(x, y)].read())
 
-            zip_file.seek(0)
-            path = f.name
-            shutil.copyfileobj(zip_file, f, length=131072)
+                zip_file.seek(0)
+                path = f.name
+                shutil.copyfileobj(zip_file, f, length=131072)
 
-        with open(path, 'rb') as zip_file:
-            watson = visual_recognition.classify(
-                zip_file,
-                classifier_ids=["default"],
-            ).get_result()
+            with open(path, 'rb') as zip_file:
+                watson = visual_recognition.classify(
+                    zip_file,
+                    classifier_ids=["default"],
+                ).get_result()
 
-    classes = watson['images'][0]['classifiers'][0]['classes']
-    return classes
+        for patch_data in watson['images']:
+            classes = patch_data['classifiers'][0]['classes']
+            x, y = map(int, patch_data['image'].split('/')[1].split('_'))
+            all_classes[(x, y)] = rank_classes(classes)
+
+    return all_classes
 
 
 # def yolo_classification(request):
@@ -159,20 +171,20 @@ class PictureEventViewSet(viewsets.ModelViewSet):
     serializer_class = PictureEventSerializer
 
     def create(self, request, *args, **kwargs):
-        print(request.data)
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        patches = {}
 
-        if USE_WATSON:
-            classes = watson_classification(request)
-        else:
-            classes = yolo_classification(request)
+        patches_data = json.loads(request.data['json']).pop('patches')
+        event = PictureEvent.objects.create()
+        for patch_data in patches_data:
+            patch = PicturePatch(event=event, **patch_data)
+            patch.picture = request.data['patch_{}_{}'.format(patch.x, patch.y)]
+            patches[(patch.x, patch.y)] = patch
 
-        classes = rank_classes(classes)
+        all_classes = watson_classification(patches, request)
 
-        serializer.validated_data['metadata'] = dict(detections=classes)
+        for (x, y), detections in all_classes.items():
+            patch = patches[(x, y)]
+            patch.metadata = dict(detections=detections)
+            patch.save()
 
-        self.perform_create(serializer)
-        headers = self.get_success_headers(serializer.data)
-
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+        return Response(serialize('json', [event])[0], status=status.HTTP_201_CREATED)

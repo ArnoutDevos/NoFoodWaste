@@ -1,5 +1,6 @@
 import time
 
+import json
 import logging
 from io import BytesIO
 
@@ -45,8 +46,15 @@ while True:
     try:
         r = requests.post(
             'http://localhost:8000/food-watch/picture-events',
+            data=dict(
+                json=json.dumps(dict(
+                    patches=[
+                        dict(x=0, y=0),
+                    ],
+                )),
+            ),
             files={
-                'picture': ('picture.jpg', byte_io),
+                'patch_0_0': ('picture.jpg', byte_io),
             },
         )
         r.raise_for_status()
