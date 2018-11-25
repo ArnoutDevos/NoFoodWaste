@@ -1,0 +1,70 @@
+<h1 id="lauzhack18privacypreservingcv">LauzHack18 - Privacy preserving CV</h1>
+
+<p>This package is designed to achieve two different objectives :         </p>
+
+<ol>
+<li>Provide real time object recognition and location for environmental awareness         </li>
+
+<li>Provide data minimization to protect privacy     </li>
+</ol>
+
+<p>For your confort, this file is available in .md or .html.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Developed by Sylvain C for LauzHack18 project. This code was inspired and modified from several online resources such as OpenCV, PYImageSearch and tensorflow tutorial. The <code>Darknet/</code> directory is a clone of Joseph Redmon git : <code>https://github.com/pjreddie/darknet.git</code>. This package provides a code to launch his CNNs called darknet and YOLO. Finally <code>Analysis/</code> provides a analysis of the different CNN performances.</p>
+
+<p>Note : The most interesting part of this work lies in the Analysis and not in the CNNs implementation.</p>
+
+<h2 id="note">Note</h2>
+
+<p>Every commands were launched from the terminal. Please make sure you are in the right directory before launching.</p>
+
+<h2 id="dependenciesandrequirements">Dependencies and requirements</h2>
+
+<p>This code was tested on OSX 10.11.6 using python 2.7. The machine had 8GB 1867 MHz memory and a 2.7 GHz Intel Core i5 processor. We decided not to run it on the GPU in order to keep in mind that in our project mindset, this software should be run on edge devices with no GPU resources. </p>
+
+<p>The following packages need to be installed on the machine :      </p>
+
+<ul>
+<li>OpenCV    </li>
+
+<li>imutils   </li>
+
+<li>time   </li>
+
+<li>python 2.7      </li>
+
+<li>matplotlib     </li>
+
+<li>tabulate     </li>
+
+<li>numpy     </li>
+
+<li>pickle     </li>
+
+<li>os     </li>
+
+<li>argparse     </li>
+
+<li>Matlab 2017a     </li>
+</ul>
+
+<h2 id="1realtimerecognition">1. Real-time recognition</h2>
+
+<p>In order to run a real-time detection using a webcam and MobileNet SSD CNN, the user needs to go to <code>mobileNet/RT_object_detect/</code> and run <code>real_time_object_detection2.py</code>. If a common object such as a chair, table or sofa is in front of the camera, a warning message will be displayed on the console. </p>
+
+<pre><code>python real_time_object_detection2.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+</code></pre>
+
+<p>To run the network over a single image, go to <code>mobileNet/object_detect/</code> and run <code>object_detection2.py</code>.</p>
+
+<pre><code>python object_detection2.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel --image images/example_1.JPEG
+</code></pre>
+
+<p>Finally, to run the CNN over a batch of images, specify the directory with <code>--directory</code> and run <code>main_obj_det.py</code>.</p>
+
+<pre><code>python main_obj_det.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel --directory images
+</code></pre>
+
+<p>This will generate a .txt file similar to mobile_dist.txt.</p>

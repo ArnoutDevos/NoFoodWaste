@@ -6,463 +6,582 @@
                 {
                     "classes": [
                         {
-                            "class": "terrine",
-                            "score": 0.568,
-                            "type_hierarchy": "/food/nutrition/dish/terrine"
+                            "class": "supercomputer",
+                            "score": 0.684,
+                            "type_hierarchy": "/machine/computer/digital computer/supercomputer"
                         },
                         {
-                            "class": "dish",
-                            "score": 0.568
+                            "class": "digital computer",
+                            "score": 0.734
                         },
                         {
-                            "class": "nutrition",
-                            "score": 0.625
+                            "class": "computer",
+                            "score": 0.788
                         },
                         {
-                            "class": "food",
-                            "score": 0.625
+                            "class": "machine",
+                            "score": 0.788
                         },
                         {
-                            "class": "coffin",
-                            "score": 0.564,
-                            "type_hierarchy": "/box/coffin"
-                        },
-                        {
-                            "class": "box",
-                            "score": 0.565
-                        },
-                        {
-                            "class": "futon",
-                            "score": 0.564
-                        },
-                        {
-                            "class": "dugout canoe",
-                            "score": 0.508,
-                            "type_hierarchy": "/vehicle/craft/watercraft/boat/small boat/dugout canoe"
-                        },
-                        {
-                            "class": "small boat",
-                            "score": 0.509
-                        },
-                        {
-                            "class": "boat",
-                            "score": 0.509
-                        },
-                        {
-                            "class": "watercraft",
-                            "score": 0.509
-                        },
-                        {
-                            "class": "craft",
-                            "score": 0.51
-                        },
-                        {
-                            "class": "vehicle",
-                            "score": 0.51
-                        },
-                        {
-                            "class": "roly-poly",
-                            "score": 0.5,
-                            "type_hierarchy": "/food/nutrition/dessert/pudding/roly-poly"
-                        },
-                        {
-                            "class": "pudding",
-                            "score": 0.5
-                        },
-                        {
-                            "class": "dessert",
-                            "score": 0.5
-                        },
-                        {
-                            "class": "food product",
-                            "score": 0.599
-                        },
-                        {
-                            "class": "beige color",
-                            "score": 0.988
-                        }
-                    ],
-                    "classifier_id": "default",
-                    "name": "default"
-                }
-            ],
-            "image": "images.zip/marbletable.jpeg"
-        },
-        {
-            "classifiers": [
-                {
-                    "classes": [
-                        {
-                            "class": "tray",
-                            "score": 0.683,
-                            "type_hierarchy": "/utensil/tray"
-                        },
-                        {
-                            "class": "utensil",
-                            "score": 0.683
-                        },
-                        {
-                            "class": "ocardina",
-                            "score": 0.595,
-                            "type_hierarchy": "/musical instrument/ocardina"
-                        },
-                        {
-                            "class": "musical instrument",
-                            "score": 0.685
-                        },
-                        {
-                            "class": "pizzeria",
-                            "score": 0.514,
-                            "type_hierarchy": "/building/retail store/shop/pizzeria"
-                        },
-                        {
-                            "class": "shop",
-                            "score": 0.514
-                        },
-                        {
-                            "class": "retail store",
-                            "score": 0.514
+                            "class": "office",
+                            "score": 0.616,
+                            "type_hierarchy": "/building/office"
                         },
                         {
                             "class": "building",
-                            "score": 0.514
+                            "score": 0.626
                         },
                         {
-                            "class": "tambourine (drum like music instrument)",
+                            "class": "server (computer)",
+                            "score": 0.531,
+                            "type_hierarchy": "/machine/computer/server (computer)"
+                        },
+                        {
+                            "class": "mainframe computer",
                             "score": 0.5,
-                            "type_hierarchy": "/musical instrument/percussion instrument/drum/tambourine (drum like music instrument)"
+                            "type_hierarchy": "/machine/computer/digital computer/mainframe computer"
                         },
                         {
-                            "class": "drum",
-                            "score": 0.501
-                        },
-                        {
-                            "class": "percussion instrument",
-                            "score": 0.501
-                        },
-                        {
-                            "class": "food",
-                            "score": 0.6
-                        },
-                        {
-                            "class": "tableware",
-                            "score": 0.594
-                        },
-                        {
-                            "class": "Indian red color",
-                            "score": 0.927
-                        },
-                        {
-                            "class": "reddish orange color",
-                            "score": 0.651
-                        }
-                    ],
-                    "classifier_id": "default",
-                    "name": "default"
-                }
-            ],
-            "image": "images.zip/pizza.jpeg"
-        },
-        {
-            "classifiers": [
-                {
-                    "classes": [
-                        {
-                            "class": "armguard",
-                            "score": 0.808,
-                            "type_hierarchy": "/protective covering/armguard"
-                        },
-                        {
-                            "class": "protective covering",
-                            "score": 0.808
-                        },
-                        {
-                            "class": "magazine rack",
-                            "score": 0.534,
-                            "type_hierarchy": "/support/rack/magazine rack"
-                        },
-                        {
-                            "class": "rack",
-                            "score": 0.534
-                        },
-                        {
-                            "class": "support",
-                            "score": 0.535
-                        },
-                        {
-                            "class": "slip ring",
-                            "score": 0.5
-                        },
-                        {
-                            "class": "bag",
-                            "score": 0.792
-                        },
-                        {
-                            "class": "light brown color",
-                            "score": 0.651
-                        },
-                        {
-                            "class": "claret red color",
-                            "score": 0.644
-                        }
-                    ],
-                    "classifier_id": "default",
-                    "name": "default"
-                }
-            ],
-            "image": "images.zip/topview.jpg"
-        },
-        {
-            "classifiers": [
-                {
-                    "classes": [
-                        {
-                            "class": "bocce ball",
-                            "score": 0.677,
-                            "type_hierarchy": "/ball/bocce ball"
-                        },
-                        {
-                            "class": "ball",
-                            "score": 0.678
-                        },
-                        {
-                            "class": "olive",
-                            "score": 0.584,
-                            "type_hierarchy": "/fruit/olive"
-                        },
-                        {
-                            "class": "fruit",
-                            "score": 0.857
-                        },
-                        {
-                            "class": "McIntosh",
-                            "score": 0.582,
-                            "type_hierarchy": "/fruit/pome/apple/eating apple/McIntosh"
-                        },
-                        {
-                            "class": "eating apple",
-                            "score": 0.643
-                        },
-                        {
-                            "class": "apple",
-                            "score": 0.666
-                        },
-                        {
-                            "class": "pome",
-                            "score": 0.68
-                        },
-                        {
-                            "class": "cranberry",
-                            "score": 0.5,
-                            "type_hierarchy": "/fruit/berry/cranberry"
-                        },
-                        {
-                            "class": "berry",
-                            "score": 0.527
-                        },
-                        {
-                            "class": "plant",
-                            "score": 0.798
-                        },
-                        {
-                            "class": "food",
-                            "score": 0.794
-                        },
-                        {
-                            "class": "seed",
-                            "score": 0.794
-                        },
-                        {
-                            "class": "olive color",
-                            "score": 0.941
-                        },
-                        {
-                            "class": "chestnut color",
-                            "score": 0.92
-                        }
-                    ],
-                    "classifier_id": "default",
-                    "name": "default"
-                }
-            ],
-            "image": "images.zip/appletop.jpg"
-        },
-        {
-            "classifiers": [
-                {
-                    "classes": [
-                        {
-                            "class": "avocado",
-                            "score": 0.985,
-                            "type_hierarchy": "/fruit/avocado"
-                        },
-                        {
-                            "class": "fruit",
-                            "score": 0.985
-                        },
-                        {
-                            "class": "avocado tree",
-                            "score": 0.5,
-                            "type_hierarchy": "/plant/tree/avocado tree"
-                        },
-                        {
-                            "class": "tree",
-                            "score": 0.5
-                        },
-                        {
-                            "class": "plant",
-                            "score": 0.5
-                        },
-                        {
-                            "class": "olive color",
-                            "score": 0.826
-                        },
-                        {
-                            "class": "olive green color",
-                            "score": 0.792
-                        }
-                    ],
-                    "classifier_id": "default",
-                    "name": "default"
-                }
-            ],
-            "image": "images.zip/avocado.jpeg"
-        },
-        {
-            "classifiers": [
-                {
-                    "classes": [
-                        {
-                            "class": "cookie sheet",
-                            "score": 0.53,
-                            "type_hierarchy": "/utensil/cookie sheet"
-                        },
-                        {
-                            "class": "utensil",
-                            "score": 0.539
-                        },
-                        {
-                            "class": "plate",
-                            "score": 0.56,
-                            "type_hierarchy": "/food/nutrition/plate"
-                        },
-                        {
-                            "class": "nutrition",
-                            "score": 0.577
-                        },
-                        {
-                            "class": "food",
-                            "score": 0.578
-                        },
-                        {
-                            "class": "galantine",
-                            "score": 0.518,
-                            "type_hierarchy": "/food/nutrition/dish/galantine"
-                        },
-                        {
-                            "class": "dish",
-                            "score": 0.521
-                        },
-                        {
-                            "class": "bone-ash cup",
-                            "score": 0.516
-                        },
-                        {
-                            "class": "palette",
-                            "score": 0.509,
-                            "type_hierarchy": "/protective covering/shield/plate/palette"
-                        },
-                        {
-                            "class": "shield",
-                            "score": 0.51
-                        },
-                        {
-                            "class": "protective covering",
-                            "score": 0.51
-                        },
-                        {
-                            "class": "dinner table",
-                            "score": 0.5,
-                            "type_hierarchy": "/furniture/table/dining table/dinner table"
-                        },
-                        {
-                            "class": "dining table",
-                            "score": 0.501
-                        },
-                        {
-                            "class": "table",
-                            "score": 0.504
-                        },
-                        {
-                            "class": "furniture",
-                            "score": 0.504
-                        },
-                        {
-                            "class": "tableware",
+                            "class": "indoors",
                             "score": 0.599
                         },
                         {
-                            "class": "olive green color",
-                            "score": 0.695
+                            "class": "sage green color",
+                            "score": 0.936
                         },
                         {
-                            "class": "pale yellow color",
-                            "score": 0.613
+                            "class": "gray color",
+                            "score": 0.819
                         }
                     ],
                     "classifier_id": "default",
                     "name": "default"
                 }
             ],
-            "image": "images.zip/topfood.jpeg"
+            "image": "images.zip/image_rec.png"
         },
         {
             "classifiers": [
                 {
                     "classes": [
                         {
-                            "class": "plate",
-                            "score": 0.709,
-                            "type_hierarchy": "/food/nutrition/plate"
+                            "class": "iceberg",
+                            "score": 0.975
                         },
                         {
-                            "class": "nutrition",
-                            "score": 0.856
+                            "class": "Ice Shelf",
+                            "score": 0.5,
+                            "type_hierarchy": "/nature/ice mass/Ice Shelf"
+                        },
+                        {
+                            "class": "ice mass",
+                            "score": 0.506
+                        },
+                        {
+                            "class": "nature",
+                            "score": 0.506
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.768
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image00.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "atom bomb",
+                            "score": 0.86,
+                            "type_hierarchy": "/explosive device/bomb/atom bomb"
+                        },
+                        {
+                            "class": "bomb",
+                            "score": 0.862
+                        },
+                        {
+                            "class": "explosive device",
+                            "score": 0.862
+                        },
+                        {
+                            "class": "jumbojet",
+                            "score": 0.703,
+                            "type_hierarchy": "/vehicle/craft/aircraft/airplane/jet plane/jumbojet"
+                        },
+                        {
+                            "class": "jet plane",
+                            "score": 0.727
+                        },
+                        {
+                            "class": "airplane",
+                            "score": 0.738
+                        },
+                        {
+                            "class": "aircraft",
+                            "score": 0.742
+                        },
+                        {
+                            "class": "craft",
+                            "score": 0.744
+                        },
+                        {
+                            "class": "vehicle",
+                            "score": 0.744
+                        },
+                        {
+                            "class": "runway",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "coal black color",
+                            "score": 0.948
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.815
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image01.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "milk",
+                            "score": 0.907,
+                            "type_hierarchy": "/food/beverage/milk"
+                        },
+                        {
+                            "class": "beverage",
+                            "score": 0.908
                         },
                         {
                             "class": "food",
-                            "score": 0.857
+                            "score": 0.908
                         },
                         {
-                            "class": "appetizer",
-                            "score": 0.613,
-                            "type_hierarchy": "/food/nutrition/appetizer"
+                            "class": "whole milk",
+                            "score": 0.579,
+                            "type_hierarchy": "/food/beverage/milk/whole milk"
                         },
                         {
-                            "class": "brunch",
-                            "score": 0.509,
-                            "type_hierarchy": "/food/nutrition/meal/brunch"
+                            "class": "skim milk",
+                            "score": 0.503,
+                            "type_hierarchy": "/food/beverage/milk/skim milk"
                         },
                         {
-                            "class": "meal",
-                            "score": 0.515
-                        },
-                        {
-                            "class": "hors d'oeuvre",
-                            "score": 0.504,
-                            "type_hierarchy": "/food/nutrition/appetizer/hors d'oeuvre"
-                        },
-                        {
-                            "class": "galantine",
+                            "class": "pasteurized milk",
                             "score": 0.5,
-                            "type_hierarchy": "/food/nutrition/dish/galantine"
+                            "type_hierarchy": "/food/beverage/milk/pasteurized milk"
                         },
                         {
-                            "class": "dish",
-                            "score": 0.513
+                            "class": "food product",
+                            "score": 0.798
                         },
                         {
-                            "class": "pale yellow color",
+                            "class": "alabaster color",
+                            "score": 0.969
+                        },
+                        {
+                            "class": "ivory color",
+                            "score": 0.77
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image03.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "waterspout",
+                            "score": 0.716
+                        },
+                        {
+                            "class": "television",
+                            "score": 0.508,
+                            "type_hierarchy": "/radio/tv set/television"
+                        },
+                        {
+                            "class": "radio/tv set",
+                            "score": 0.508
+                        },
+                        {
+                            "class": "car door",
+                            "score": 0.5,
+                            "type_hierarchy": "/barrier/door/car door"
+                        },
+                        {
+                            "class": "door",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "barrier",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.643
+                        },
+                        {
+                            "class": "charcoal color",
+                            "score": 0.637
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image02.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "dracaena",
+                            "score": 0.658,
+                            "type_hierarchy": "/plant/desert plant/dracaena"
+                        },
+                        {
+                            "class": "desert plant",
+                            "score": 0.658
+                        },
+                        {
+                            "class": "plant",
+                            "score": 0.799
+                        },
+                        {
+                            "class": "aspidistra",
+                            "score": 0.643,
+                            "type_hierarchy": "/plant/herb/aspidistra"
+                        },
+                        {
+                            "class": "herb",
+                            "score": 0.643
+                        },
+                        {
+                            "class": "covered smut",
+                            "score": 0.562,
+                            "type_hierarchy": "/fungus/covered smut"
+                        },
+                        {
+                            "class": "fungus",
+                            "score": 0.744
+                        },
+                        {
+                            "class": "bunt",
+                            "score": 0.546,
+                            "type_hierarchy": "/fungus/bunt"
+                        },
+                        {
+                            "class": "loose smut",
+                            "score": 0.5,
+                            "type_hierarchy": "/fungus/loose smut"
+                        },
+                        {
+                            "class": "bird",
+                            "score": 0.596
+                        },
+                        {
+                            "class": "olive green color",
+                            "score": 0.961
+                        },
+                        {
+                            "class": "sage green color",
+                            "score": 0.885
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image12.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "pasteurized milk",
+                            "score": 0.615,
+                            "type_hierarchy": "/food/beverage/milk/pasteurized milk"
+                        },
+                        {
+                            "class": "milk",
+                            "score": 0.726
+                        },
+                        {
+                            "class": "beverage",
+                            "score": 0.722
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.783
+                        },
+                        {
+                            "class": "soya milk",
+                            "score": 0.51,
+                            "type_hierarchy": "/food/food product/milk/soya milk"
+                        },
+                        {
+                            "class": "food product",
+                            "score": 0.572
+                        },
+                        {
+                            "class": "ceriman",
+                            "score": 0.509,
+                            "type_hierarchy": "/plant/vine/ceriman"
+                        },
+                        {
+                            "class": "vine",
+                            "score": 0.509
+                        },
+                        {
+                            "class": "plant",
+                            "score": 0.509
+                        },
+                        {
+                            "class": "dairy product",
+                            "score": 0.507,
+                            "type_hierarchy": "/food/food product/dairy product"
+                        },
+                        {
+                            "class": "limeade",
+                            "score": 0.502,
+                            "type_hierarchy": "/food/beverage/limeade"
+                        },
+                        {
+                            "class": "whole milk",
+                            "score": 0.5,
+                            "type_hierarchy": "/food/beverage/milk/whole milk"
+                        },
+                        {
+                            "class": "sage green color",
+                            "score": 0.999
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image13.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "X-ray film",
+                            "score": 0.613,
+                            "type_hierarchy": "/photographic equipment/photographic film/X-ray film"
+                        },
+                        {
+                            "class": "photographic film",
+                            "score": 0.614
+                        },
+                        {
+                            "class": "photographic equipment",
+                            "score": 0.614
+                        },
+                        {
+                            "class": "television",
+                            "score": 0.567,
+                            "type_hierarchy": "/radio/tv set/television"
+                        },
+                        {
+                            "class": "radio/tv set",
+                            "score": 0.567
+                        },
+                        {
+                            "class": "sundog (parhelion)",
+                            "score": 0.53
+                        },
+                        {
+                            "class": "ash-pan",
+                            "score": 0.5,
+                            "type_hierarchy": "/receptacle/ash-pan"
+                        },
+                        {
+                            "class": "receptacle",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "screen",
+                            "score": 0.6
+                        },
+                        {
+                            "class": "electronic equipment",
+                            "score": 0.6
+                        },
+                        {
+                            "class": "indoors",
+                            "score": 0.597
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.993
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image72.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "photocopier",
+                            "score": 0.596,
+                            "type_hierarchy": "/apparatus/photocopier"
+                        },
+                        {
+                            "class": "apparatus",
+                            "score": 0.596
+                        },
+                        {
+                            "class": "Sheetrock",
+                            "score": 0.548
+                        },
+                        {
+                            "class": "sage green color",
+                            "score": 0.517,
+                            "type_hierarchy": "/green color/sage green color"
+                        },
+                        {
+                            "class": "green color",
+                            "score": 0.517
+                        },
+                        {
+                            "class": "plasterboard",
+                            "score": 0.517
+                        },
+                        {
+                            "class": "housetop",
+                            "score": 0.5,
+                            "type_hierarchy": "/protective covering/housetop"
+                        },
+                        {
+                            "class": "protective covering",
+                            "score": 0.5
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image11.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "iceberg",
+                            "score": 0.812
+                        },
+                        {
+                            "class": "light source",
+                            "score": 0.571
+                        },
+                        {
+                            "class": "razorblade",
+                            "score": 0.5,
+                            "type_hierarchy": "/tool/razorblade"
+                        },
+                        {
+                            "class": "tool",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "dental appliance",
+                            "score": 0.791
+                        },
+                        {
+                            "class": "ice mass",
+                            "score": 0.801
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.792
+                        },
+                        {
+                            "class": "jade green color",
+                            "score": 0.741
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image60.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "jumbojet",
+                            "score": 0.703,
+                            "type_hierarchy": "/vehicle/craft/aircraft/airplane/jet plane/jumbojet"
+                        },
+                        {
+                            "class": "jet plane",
+                            "score": 0.751
+                        },
+                        {
+                            "class": "airplane",
+                            "score": 0.779
+                        },
+                        {
+                            "class": "aircraft",
+                            "score": 0.785
+                        },
+                        {
+                            "class": "craft",
+                            "score": 0.789
+                        },
+                        {
+                            "class": "vehicle",
+                            "score": 0.789
+                        },
+                        {
+                            "class": "atom bomb",
+                            "score": 0.5,
+                            "type_hierarchy": "/explosive device/bomb/atom bomb"
+                        },
+                        {
+                            "class": "bomb",
+                            "score": 0.506
+                        },
+                        {
+                            "class": "explosive device",
+                            "score": 0.506
+                        },
+                        {
+                            "class": "watercraft",
+                            "score": 0.598
+                        },
+                        {
+                            "class": "gray color",
                             "score": 0.998
                         }
                     ],
@@ -470,185 +589,610 @@
                     "name": "default"
                 }
             ],
-            "image": "images.zip/Dining-at-Alcomar.jpg"
+            "image": "images.zip/image71.png"
         },
         {
             "classifiers": [
                 {
                     "classes": [
                         {
-                            "class": "ackee",
-                            "score": 0.838,
-                            "type_hierarchy": "/fruit/ackee"
+                            "class": "computer monitor",
+                            "score": 0.579,
+                            "type_hierarchy": "/electronic device/video display/computer monitor"
                         },
                         {
-                            "class": "fruit",
-                            "score": 0.839
+                            "class": "video display",
+                            "score": 0.587
                         },
                         {
-                            "class": "hors d'oeuvre",
+                            "class": "electronic device",
+                            "score": 0.661
+                        },
+                        {
+                            "class": "glove compartment",
+                            "score": 0.552,
+                            "type_hierarchy": "/indoors/compartment/glove compartment"
+                        },
+                        {
+                            "class": "compartment",
+                            "score": 0.559
+                        },
+                        {
+                            "class": "indoors",
+                            "score": 0.56
+                        },
+                        {
+                            "class": "personal computer",
+                            "score": 0.542,
+                            "type_hierarchy": "/machine/computer/digital computer/personal computer"
+                        },
+                        {
+                            "class": "digital computer",
+                            "score": 0.545
+                        },
+                        {
+                            "class": "computer",
+                            "score": 0.609
+                        },
+                        {
+                            "class": "machine",
+                            "score": 0.61
+                        },
+                        {
+                            "class": "digital scanner",
+                            "score": 0.511,
+                            "type_hierarchy": "/electronic device/digital scanner"
+                        },
+                        {
+                            "class": "dishwasher",
+                            "score": 0.508,
+                            "type_hierarchy": "/appliance/dishwasher"
+                        },
+                        {
+                            "class": "appliance",
+                            "score": 0.511
+                        },
+                        {
+                            "class": "computer keyboard",
                             "score": 0.5,
-                            "type_hierarchy": "/food/nutrition/appetizer/hors d'oeuvre"
+                            "type_hierarchy": "/keyboard/computer keyboard"
                         },
                         {
-                            "class": "appetizer",
-                            "score": 0.502
+                            "class": "keyboard",
+                            "score": 0.51
                         },
                         {
-                            "class": "nutrition",
-                            "score": 0.503
+                            "class": "charcoal color",
+                            "score": 0.944
                         },
                         {
-                            "class": "food",
-                            "score": 0.503
-                        },
-                        {
-                            "class": "food product",
-                            "score": 0.79
-                        },
-                        {
-                            "class": "vegetable",
-                            "score": 0.792
-                        },
-                        {
-                            "class": "seed",
-                            "score": 0.797
-                        },
-                        {
-                            "class": "tree",
-                            "score": 0.794
-                        },
-                        {
-                            "class": "chestnut color",
-                            "score": 0.99
+                            "class": "gray color",
+                            "score": 0.63
                         }
                     ],
                     "classifier_id": "default",
                     "name": "default"
                 }
             ],
-            "image": "images.zip/nuts.jpg"
+            "image": "images.zip/image73.png"
         },
         {
             "classifiers": [
                 {
                     "classes": [
                         {
-                            "class": "strawberry",
-                            "score": 0.95,
-                            "type_hierarchy": "/mound/embankment/strawberry"
+                            "class": "office",
+                            "score": 0.749,
+                            "type_hierarchy": "/building/office"
                         },
                         {
-                            "class": "embankment",
-                            "score": 0.95
+                            "class": "building",
+                            "score": 0.751
                         },
                         {
-                            "class": "mound",
-                            "score": 0.95
+                            "class": "booth",
+                            "score": 0.562,
+                            "type_hierarchy": "/indoors/closet/booth"
                         },
                         {
-                            "class": "beach strawberry",
+                            "class": "closet",
+                            "score": 0.566
+                        },
+                        {
+                            "class": "indoors",
+                            "score": 0.567
+                        },
+                        {
+                            "class": "supercomputer",
+                            "score": 0.52,
+                            "type_hierarchy": "/machine/computer/digital computer/supercomputer"
+                        },
+                        {
+                            "class": "digital computer",
+                            "score": 0.521
+                        },
+                        {
+                            "class": "computer",
+                            "score": 0.73
+                        },
+                        {
+                            "class": "machine",
+                            "score": 0.73
+                        },
+                        {
+                            "class": "server (computer)",
                             "score": 0.5,
-                            "type_hierarchy": "/plant/herb/beach strawberry"
+                            "type_hierarchy": "/machine/computer/server (computer)"
+                        },
+                        {
+                            "class": "sage green color",
+                            "score": 0.967
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image_priv.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "light source",
+                            "score": 0.672
+                        },
+                        {
+                            "class": "skylight",
+                            "score": 0.562,
+                            "type_hierarchy": "/supporting structure/framework/window/skylight"
+                        },
+                        {
+                            "class": "window",
+                            "score": 0.562
+                        },
+                        {
+                            "class": "framework",
+                            "score": 0.562
+                        },
+                        {
+                            "class": "supporting structure",
+                            "score": 0.562
+                        },
+                        {
+                            "class": "lambrequin (decorative hanging of building)",
+                            "score": 0.508
+                        },
+                        {
+                            "class": "mattress cover",
+                            "score": 0.507,
+                            "type_hierarchy": "/bed/mattress cover"
+                        },
+                        {
+                            "class": "bed",
+                            "score": 0.508
+                        },
+                        {
+                            "class": "strip lighting",
+                            "score": 0.505,
+                            "type_hierarchy": "/light source/strip lighting"
+                        },
+                        {
+                            "class": "scrub brush",
+                            "score": 0.5,
+                            "type_hierarchy": "/brush/scrub brush"
+                        },
+                        {
+                            "class": "brush",
+                            "score": 0.51
+                        },
+                        {
+                            "class": "source of illumination",
+                            "score": 0.601
+                        },
+                        {
+                            "class": "fabric",
+                            "score": 0.595
+                        },
+                        {
+                            "class": "ivory color",
+                            "score": 0.765
+                        },
+                        {
+                            "class": "ultramarine color",
+                            "score": 0.581
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image10.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "bay leaf",
+                            "score": 0.622,
+                            "type_hierarchy": "/food/food product/food ingredient/food seasoning/herb/bay leaf"
                         },
                         {
                             "class": "herb",
-                            "score": 0.5
+                            "score": 0.662
+                        },
+                        {
+                            "class": "food seasoning",
+                            "score": 0.662
+                        },
+                        {
+                            "class": "food ingredient",
+                            "score": 0.662
+                        },
+                        {
+                            "class": "food product",
+                            "score": 0.662
+                        },
+                        {
+                            "class": "food",
+                            "score": 0.662
+                        },
+                        {
+                            "class": "true laurel tree",
+                            "score": 0.508,
+                            "type_hierarchy": "/plant/tree/laurel tree/true laurel tree"
+                        },
+                        {
+                            "class": "laurel tree",
+                            "score": 0.512
+                        },
+                        {
+                            "class": "tree",
+                            "score": 0.516
                         },
                         {
                             "class": "plant",
+                            "score": 0.517
+                        },
+                        {
+                            "class": "basil",
+                            "score": 0.507,
+                            "type_hierarchy": "/food/food product/food ingredient/food seasoning/herb/basil"
+                        },
+                        {
+                            "class": "sage green color",
+                            "score": 0.501,
+                            "type_hierarchy": "/green color/sage green color"
+                        },
+                        {
+                            "class": "green color",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "cascarilla bark",
                             "score": 0.5
-                        },
-                        {
-                            "class": "berry",
-                            "score": 0.8
-                        },
-                        {
-                            "class": "fruit",
-                            "score": 0.788
-                        },
-                        {
-                            "class": "dark red color",
-                            "score": 0.846
-                        },
-                        {
-                            "class": "reddish orange color",
-                            "score": 0.749
                         }
                     ],
                     "classifier_id": "default",
                     "name": "default"
                 }
             ],
-            "image": "images.zip/strawberry.jpeg"
+            "image": "images.zip/image21.png"
         },
         {
             "classifiers": [
                 {
                     "classes": [
                         {
-                            "class": "bone-ash cup",
-                            "score": 0.549
+                            "class": "computer monitor",
+                            "score": 0.765,
+                            "type_hierarchy": "/electronic device/video display/computer monitor"
                         },
                         {
-                            "class": "deviled egg",
-                            "score": 0.548,
-                            "type_hierarchy": "/food/nutrition/dish/deviled egg"
+                            "class": "video display",
+                            "score": 0.766
                         },
                         {
-                            "class": "dish",
-                            "score": 0.599
+                            "class": "electronic device",
+                            "score": 0.766
                         },
                         {
-                            "class": "nutrition",
-                            "score": 0.554
+                            "class": "personal computer",
+                            "score": 0.616,
+                            "type_hierarchy": "/machine/computer/digital computer/personal computer"
                         },
                         {
-                            "class": "food",
-                            "score": 0.555
+                            "class": "digital computer",
+                            "score": 0.736
                         },
                         {
-                            "class": "salad bowl",
-                            "score": 0.512,
-                            "type_hierarchy": "/utensil/tableware/bowl/salad bowl"
+                            "class": "computer",
+                            "score": 0.83
                         },
                         {
-                            "class": "bowl",
-                            "score": 0.525
+                            "class": "machine",
+                            "score": 0.83
                         },
                         {
-                            "class": "tableware",
-                            "score": 0.577
-                        },
-                        {
-                            "class": "utensil",
-                            "score": 0.625
-                        },
-                        {
-                            "class": "tray",
-                            "score": 0.506,
-                            "type_hierarchy": "/utensil/tray"
-                        },
-                        {
-                            "class": "serving dish",
+                            "class": "workstation",
                             "score": 0.5,
-                            "type_hierarchy": "/utensil/tableware/dish/serving dish"
+                            "type_hierarchy": "/machine/computer/digital computer/workstation"
                         },
                         {
-                            "class": "food product",
-                            "score": 0.598
+                            "class": "electronic equipment",
+                            "score": 0.795
                         },
                         {
-                            "class": "pale yellow color",
-                            "score": 0.792
+                            "class": "telecommunication",
+                            "score": 0.779
+                        },
+                        {
+                            "class": "charcoal color",
+                            "score": 0.909
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.791
                         }
                     ],
                     "classifier_id": "default",
                     "name": "default"
                 }
             ],
-            "image": "images.zip/download.jpeg"
+            "image": "images.zip/image63.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "ocean",
+                            "score": 0.534,
+                            "type_hierarchy": "/nature/ocean"
+                        },
+                        {
+                            "class": "nature",
+                            "score": 0.534
+                        },
+                        {
+                            "class": "mattress cover",
+                            "score": 0.526,
+                            "type_hierarchy": "/bed/mattress cover"
+                        },
+                        {
+                            "class": "bed",
+                            "score": 0.527
+                        },
+                        {
+                            "class": "air bubble",
+                            "score": 0.516,
+                            "type_hierarchy": "/bubble/air bubble"
+                        },
+                        {
+                            "class": "bubble",
+                            "score": 0.516
+                        },
+                        {
+                            "class": "voile fabric",
+                            "score": 0.512,
+                            "type_hierarchy": "/fabric/voile fabric"
+                        },
+                        {
+                            "class": "fabric",
+                            "score": 0.516
+                        },
+                        {
+                            "class": "color wash",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "ice mass",
+                            "score": 0.599
+                        },
+                        {
+                            "class": "sage green color",
+                            "score": 0.605
+                        },
+                        {
+                            "class": "ivory color",
+                            "score": 0.601
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image70.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "light source",
+                            "score": 0.639
+                        },
+                        {
+                            "class": "bracteole",
+                            "score": 0.537,
+                            "type_hierarchy": "/plant/bracteole"
+                        },
+                        {
+                            "class": "plant",
+                            "score": 0.537
+                        },
+                        {
+                            "class": "screw",
+                            "score": 0.517,
+                            "type_hierarchy": "/mechanical device/machine/inclined plane/screw"
+                        },
+                        {
+                            "class": "inclined plane",
+                            "score": 0.517
+                        },
+                        {
+                            "class": "machine",
+                            "score": 0.517
+                        },
+                        {
+                            "class": "mechanical device",
+                            "score": 0.517
+                        },
+                        {
+                            "class": "mount",
+                            "score": 0.504,
+                            "type_hierarchy": "/supporting structure/framework/mount"
+                        },
+                        {
+                            "class": "framework",
+                            "score": 0.504
+                        },
+                        {
+                            "class": "supporting structure",
+                            "score": 0.504
+                        },
+                        {
+                            "class": "iceberg",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "ice mass",
+                            "score": 0.599
+                        },
+                        {
+                            "class": "pin",
+                            "score": 0.598
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.799
+                        },
+                        {
+                            "class": "ivory color",
+                            "score": 0.627
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image20.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "gas heater",
+                            "score": 0.511
+                        },
+                        {
+                            "class": "computer monitor",
+                            "score": 0.51,
+                            "type_hierarchy": "/electronic device/video display/computer monitor"
+                        },
+                        {
+                            "class": "video display",
+                            "score": 0.515
+                        },
+                        {
+                            "class": "electronic device",
+                            "score": 0.516
+                        },
+                        {
+                            "class": "roller blind",
+                            "score": 0.5,
+                            "type_hierarchy": "/protective covering/screen/roller blind"
+                        },
+                        {
+                            "class": "screen",
+                            "score": 0.524
+                        },
+                        {
+                            "class": "protective covering",
+                            "score": 0.524
+                        },
+                        {
+                            "class": "heater",
+                            "score": 0.601
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.962
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image61.png"
+        },
+        {
+            "classifiers": [
+                {
+                    "classes": [
+                        {
+                            "class": "cullis (gutter in roof)",
+                            "score": 0.612
+                        },
+                        {
+                            "class": "fire screen",
+                            "score": 0.544,
+                            "type_hierarchy": "/protective covering/screen/fire screen"
+                        },
+                        {
+                            "class": "screen",
+                            "score": 0.545
+                        },
+                        {
+                            "class": "protective covering",
+                            "score": 0.545
+                        },
+                        {
+                            "class": "window frame",
+                            "score": 0.521,
+                            "type_hierarchy": "/supporting structure/framework/window frame"
+                        },
+                        {
+                            "class": "framework",
+                            "score": 0.585
+                        },
+                        {
+                            "class": "supporting structure",
+                            "score": 0.585
+                        },
+                        {
+                            "class": "doorframe",
+                            "score": 0.507,
+                            "type_hierarchy": "/supporting structure/framework/doorframe"
+                        },
+                        {
+                            "class": "elevator shaft",
+                            "score": 0.501
+                        },
+                        {
+                            "class": "stovepipe",
+                            "score": 0.5
+                        },
+                        {
+                            "class": "gray color",
+                            "score": 0.967
+                        }
+                    ],
+                    "classifier_id": "default",
+                    "name": "default"
+                }
+            ],
+            "image": "images.zip/image62.png"
         }
     ],
-    "images_processed": 10
+    "images_processed": 20,
+    "warnings": [
+        {
+            "description": "Max number of images (20) reached",
+            "warning_id": "batch_limit_reached"
+        }
+    ]
 }
