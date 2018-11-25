@@ -1,4 +1,5 @@
 #!/usr/bin/env python2
+import requests
 from hermes_python.hermes import Hermes
 import random
 
@@ -22,22 +23,30 @@ INTENT_FILTER_GET_FINAL_ANSWER = [
     INTENT_SATISFIED
 ]
 
-#operations = ["add", "sub", "mul", "div"]
+API_HOST = 'http://localhost:8000'
 
 SessionsStates = {}
+
 
 def user_ask_food(hermes, intent_message):
     session_id = intent_message.session_id
 
-    #
-    ##
-    ### FOR LOOP WAITING FOR FOOD TO APPEAR FROM OTHER api
-    ##
-    #
+    try:
+        r = requests.get('/food-watch/get-food-available')
+        r.raise_for_status()
+        r_data = r.json()
+    except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError) as ex:
+        r_data = {}
+        print(ex)
 
-    response = "Hey buddy, I saw some free food in the BC building. Don't let it go to waste!"
+    food = r_data.get('food')
+    if food:
+        response = "Hey buddy, I saw some free food in the BC building. Don't let it go to waste!"
+    else:
+        response = "No food"
 
     hermes.publish_continue_session(session_id, response, INTENT_FILTER_GET_ANSWER)
+
 
 def user_more_info(hermes, intent_message):
     session_id = intent_message.session_id
