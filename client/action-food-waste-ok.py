@@ -1,8 +1,9 @@
 #!/usr/bin/env python2
-import requests
 from hermes_python.hermes import Hermes
 import random
 import threading
+import requests
+import time
 
 MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
@@ -24,64 +25,51 @@ INTENT_FILTER_GET_FINAL_ANSWER = [
     INTENT_SATISFIED
 ]
 
-API_HOST = 'http://localhost:8000'
+#operations = ["add", "sub", "mul", "div"]
 
 SessionsStates = {}
-SessionsStates[session_id]["food"] = []
-THREAD = None
+API_HOST = 'http://localhost:8000'
 
 def user_ask_food(hermes, intent_message):
     session_id = intent_message.session_id
 
-#     if not THREAD:
-#         thread = threading.Thread(target=check_food_availability, args=(session_id))
-#         thread.daemon = True
-#         thread.start()
-#
-#         THREAD = thread
-#
-# def check_food_availability(session_id):
-#     i=0
-#     while True:
-#         try:
-#             r = requests.get('/food-watch/get-food-available')
-#             r.raise_for_status()
-#         except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError) as ex:
-#             print(ex)
-#             time.sleep(1000)
-#
-#         food_list = r.json().get('food')
-#
-#         if food_list:
-#             break
-#
-#         if i == 1:
-#             break
-#         i +=1
-#         time.sleep(1000)
+    # food_list = []
+    # try:
+    #     r = requests.get(API_HOST+'/food-watch/get-food-available')
+    #     r.raise_for_status()
+    #     food_list = r.json().get('food')
+    # except (requests.exceptions.HTTPError, requests.exceptions.ConnectionError) as ex:
+    #     food_list = ["pizza", "beer"]
+
+    food_list = ["pizza", "beer"]
+
+    SessionsStates[session_id]["food"] = food_list
 
     #food_list = ["pizza", "pasta"]
     #SessionsStates[session_id]["food"] = food_list
     #response = "Hey buddy, I saw at least {} free food in the BC building. Don't let it go to waste!".format(str(len(food_list)))
-    response = "Hey I have food available."
-    hermes.publish_continue_session(session_id, response, INTENT_FILTER_GET_ANSWER)
+    if food_list:
+        response = "Hey buddy, I saw some {} free food in the BC building. Don't let it go to waste!".format(str(len(food_list)))
+        hermes.publish_continue_session(session_id, response, INTENT_FILTER_GET_ANSWER)
+    else:
+        response = "Sorry man. At the moment, there is no food available."
+        hermes.publish_end_session(session_id, response)
 
 def user_more_info(hermes, intent_message):
     session_id = intent_message.session_id
 
-    list_foods = ["pizza", "beer"]
+    list_foods = SessionsStates[session_id]["food"]
+    #list_foods = ["pizza", "beer"]
 
     specific_food = None
-
-    response = ""
     if intent_message.slots is not None:
-        specific_food = intent_message.slots.food_name.first().value
+        specific_food = intent_message.slots.answer.first().value
         if specific_food in list_foods:
             response = "It is your lucky day, they have {}.".format(specific_food)
-            #hermes.publish_end_session(session_id, response)
+            hermes.publish_end_session(session_id, response)
         else:
             response = "Unfortunately, they don't have any free {0} today, but they do have {1}.".format(specific_food, str(list_foods))
-            #hermes.publish_end_session(session_id, response)
+            hermes.publish_end_session(session_id, response)
 
     else:
         response = "On today's menu they serve {}.".format(list_foods)
@@ -102,7 +90,7 @@ def user_satisfied(hermes, intent_message):
     session_id = intent_message.session_id
 
     # clean up
-    del SessionsStates[session_id]
+    #del SessionsStates[session_id]
     response = "Alright, enjoy your meal!"
 
     hermes.publish_end_session(session_id, response)
@@ -113,5 +101,4 @@ with Hermes(MQTT_ADDR) as h:
         .subscribe_intent(INTENT_STOP, user_quits) \
         .subscribe_intent(INTENT_INTEREST, user_more_info) \
         .subscribe_intent(INTENT_SATISFIED, user_satisfied) \
-        .subscribe_intent(INTENT_LOOP, user_loop) \
         .start()
