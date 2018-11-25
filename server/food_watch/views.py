@@ -172,6 +172,7 @@ class PictureEventViewSet(viewsets.ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         patches = {}
+        print(request.data)
 
         patches_data = json.loads(request.data['json']).pop('patches')
         event = PictureEvent.objects.create()
