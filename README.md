@@ -4,11 +4,6 @@ LauzHack 2018
 IBM api:
 `pip install --upgrade "watson-developer-cloud>=2.4.1"`
 
-Logitech keyboard:
-`pip install pyusb`
-
-(OSX) Libusb needed!
-
 Idea/goals:
 - [x] Every 30 seconds: take 4K picture on *client*
 - [x] blur people on client
